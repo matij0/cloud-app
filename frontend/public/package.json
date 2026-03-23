@@ -1,0 +1,7 @@
+{
+  "name": "frontend-task-manager",
+  "scripts": {
+    "start": "npx serve -s ."
+  }
+}
+ 

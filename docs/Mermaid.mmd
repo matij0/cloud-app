@@ -1,0 +1,11 @@
+C4Context
+    title Diagram kontenerów (C4) - ToDoApp
+    Person(user, "Użytkownik", "Zarządza swoimi zadaniami")
+    Enterprise_Boundary(c1, "ToDoApp") {
+        Container(web_app, "Frontend (React 19)", "HTTPS", "Interfejs użytkownika")
+        Container(api, "Backend (API)", "Node 24", "Logika biznesowa, REST API")
+        ContainerDb(db, "Baza danych (MongoDB)", "MongoDb", "Przechowuje dane i zadania")
+    }
+    Rel(user, web_app, "Korzysta z", "HTTPS")
+    Rel(web_app, api, "Wysyła zapytania", "JSON/HTTPS")
+    Rel(api, db, "Odczytuje/Zapisuje", "MongoDB / Port 27017")
