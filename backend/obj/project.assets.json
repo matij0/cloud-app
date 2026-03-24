@@ -5175,11 +5175,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\mateu\\OneDrive\\pulpit\\projekt\\backend\\CloudBackend.csproj",
+      "projectUniqueName": "C:\\users\\mateu\\onedrive\\pulpit\\cloud-app\\backend\\CloudBackend.csproj",
       "projectName": "CloudBackend",
-      "projectPath": "C:\\Users\\mateu\\OneDrive\\pulpit\\projekt\\backend\\CloudBackend.csproj",
+      "projectPath": "C:\\users\\mateu\\onedrive\\pulpit\\cloud-app\\backend\\CloudBackend.csproj",
       "packagesPath": "C:\\Users\\mateu\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\mateu\\OneDrive\\pulpit\\projekt\\backend\\obj\\",
+      "outputPath": "C:\\users\\mateu\\onedrive\\pulpit\\cloud-app\\backend\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\mateu\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -5246,24 +5246,6 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
-        "downloadDependencies": [
-          {
-            "name": "Microsoft.AspNetCore.App.Ref",
-            "version": "[9.0.14, 9.0.14]"
-          },
-          {
-            "name": "Microsoft.NETCore.App.Host.win-x64",
-            "version": "[9.0.14, 9.0.14]"
-          },
-          {
-            "name": "Microsoft.NETCore.App.Ref",
-            "version": "[9.0.14, 9.0.14]"
-          },
-          {
-            "name": "Microsoft.WindowsDesktop.App.Ref",
-            "version": "[9.0.14, 9.0.14]"
-          }
-        ],
         "frameworkReferences": {
           "Microsoft.AspNetCore.App": {
             "privateAssets": "none"

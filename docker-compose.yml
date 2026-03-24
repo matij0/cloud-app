@@ -1,6 +1,29 @@
 version: "3.9"
-
 services:
+  # Warstwa Prezentacji (React)
+  frontend:
+    build: ./frontend
+    container_name: cloud-frontend
+    ports:
+      - "8080:80"
+    networks:
+      - cloud-network
+    depends_on:
+      - backend
+  # Warstwa Logiki (.NET 9)
+  backend:
+    build: ./backend
+    container_name: cloud-backend
+    ports:
+      - "8081:8080" # Mapujemy port 8080 kontenera (standard .NET 9) na 8081 hosta
+    environment:
+      - ASPNETCORE_HTTP_PORTS=8080
+      # UWAGA: Hasło w tekście jawnym zostanie zabezpieczone później, ale dla celów demonstracyjnych jest tutaj umieszczone. W praktyce należy używać zmiennych środowiskowych lub menedżerów sekretów.
+      - ConnectionStrings__DefaultConnection=Server=cloud-db;Database=CloudAppDb;User Id=sa;Password=StrongPassword123!;TrustServerCertificate=True
+    networks:
+      - cloud-network
+    depends_on:
+      - cloud-db
   # Warstwa Danych (SQL Edge)
   cloud-db:
     image: mcr.microsoft.com/azure-sql-edge
@@ -15,36 +38,10 @@ services:
     networks:
       - cloud-network
 
-  # Warstwa Logiki (.NET 9)
-  backend:
-    build: ./backend
-    container_name: cloud-backend
-    ports:
-      - "8081:8080" # Mapujemy port 8080 kontenera na 8081 hosta
-    environment:
-      - ASPNETCORE_HTTP_PORTS=8080
-      - ConnectionStrings__DefaultConnection=Server=cloud-db,1433;Database=CloudAppDb;User Id=sa;Password=StrongPassword123!;TrustServerCertificate=True
-    networks:
-      - cloud-network
-    depends_on:
-      - cloud-db
-    command: >
-      /bin/sh -c "dotnet ef database update && dotnet CloudBackend.dll"
-
-  # Warstwa Prezentacji (React)
-  frontend:
-    build: ./frontend
-    container_name: cloud-frontend
-    ports:
-      - "8080:80"
-    networks:
-      - cloud-network
-    depends_on:
-      - backend
-
 networks:
   cloud-network:
     driver: bridge
 
+# KROK 2: Globalna definicja wolumenu
 volumes:
   sql-data:
