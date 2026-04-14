@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\users\\mateu\\onedrive\\pulpit\\cloud-app\\backend\\CloudBackend.csproj": {}
+    "C:\\Users\\mateu\\OneDrive\\Pulpit\\zadanie\\cloud-app\\backend\\CloudBackend.csproj": {}
   },
   "projects": {
-    "C:\\users\\mateu\\onedrive\\pulpit\\cloud-app\\backend\\CloudBackend.csproj": {
+    "C:\\Users\\mateu\\OneDrive\\Pulpit\\zadanie\\cloud-app\\backend\\CloudBackend.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\users\\mateu\\onedrive\\pulpit\\cloud-app\\backend\\CloudBackend.csproj",
+        "projectUniqueName": "C:\\Users\\mateu\\OneDrive\\Pulpit\\zadanie\\cloud-app\\backend\\CloudBackend.csproj",
         "projectName": "CloudBackend",
-        "projectPath": "C:\\users\\mateu\\onedrive\\pulpit\\cloud-app\\backend\\CloudBackend.csproj",
+        "projectPath": "C:\\Users\\mateu\\OneDrive\\Pulpit\\zadanie\\cloud-app\\backend\\CloudBackend.csproj",
         "packagesPath": "C:\\Users\\mateu\\.nuget\\packages\\",
-        "outputPath": "C:\\users\\mateu\\onedrive\\pulpit\\cloud-app\\backend\\obj\\",
+        "outputPath": "C:\\Users\\mateu\\OneDrive\\Pulpit\\zadanie\\cloud-app\\backend\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\mateu\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -44,6 +44,14 @@
         "net9.0": {
           "targetAlias": "net9.0",
           "dependencies": {
+            "Azure.Extensions.AspNetCore.Configuration.Secrets": {
+              "target": "Package",
+              "version": "[1.5.0, )"
+            },
+            "Azure.Identity": {
+              "target": "Package",
+              "version": "[1.21.0, )"
+            },
             "Microsoft.AspNetCore.OpenApi": {
               "target": "Package",
               "version": "[9.0.13, )"
