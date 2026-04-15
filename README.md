@@ -18,3 +18,4 @@ Ten projekt został zaplanowany z myślą o usługach PaaS (Platform as a Servic
 * [x] **Artefakt 4:** Działająca warstwa serwerowa + działające API Swaggera
 * [x] **Artefakt 5:** System gotowy na chmurę
 * [x] **Artefakt 6:** Backend i frontend działający z Azure
+* [x] **Artefakt 7:** Usunięto connectionstring z plików.
