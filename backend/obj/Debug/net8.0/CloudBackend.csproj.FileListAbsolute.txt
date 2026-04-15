@@ -141,3 +141,9 @@ C:\Users\mateu\OneDrive\Pulpit\zadanie\cloud-app\backend\obj\Debug\net8.0\refint
 C:\Users\mateu\OneDrive\Pulpit\zadanie\cloud-app\backend\obj\Debug\net8.0\CloudBackend.pdb
 C:\Users\mateu\OneDrive\Pulpit\zadanie\cloud-app\backend\obj\Debug\net8.0\CloudBackend.genruntimeconfig.cache
 C:\Users\mateu\OneDrive\Pulpit\zadanie\cloud-app\backend\obj\Debug\net8.0\ref\CloudBackend.dll
+C:\Users\mateu\OneDrive\Pulpit\zadanie\cloud-app\backend\bin\Debug\net8.0\publish\web.config
+C:\Users\mateu\OneDrive\Pulpit\zadanie\cloud-app\backend\bin\Debug\net8.0\publish\appsettings.Development.json
+C:\Users\mateu\OneDrive\Pulpit\zadanie\cloud-app\backend\bin\Debug\net8.0\publish\appsettings.json
+C:\Users\mateu\OneDrive\Pulpit\zadanie\cloud-app\backend\bin\Debug\net8.0\publish\CloudBackend.deps.json
+C:\Users\mateu\OneDrive\Pulpit\zadanie\cloud-app\backend\bin\Debug\net8.0\publish\CloudBackend.runtimeconfig.json
+C:\Users\mateu\OneDrive\Pulpit\zadanie\cloud-app\backend\bin\Debug\net8.0\publish\CloudBackend.staticwebassets.endpoints.json
