@@ -1,5 +1,5 @@
 {
-  "name": "frontend-task-manager",
+  "name": "cloud-task-manager-frontend-96687",
   "scripts": {
     "start": "npx serve -s ."
   }
